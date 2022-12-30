@@ -6,7 +6,7 @@ const FeatureProduct = () => {
   const { isLoading, featureProducts } = useProductContext()
   // console.log(featureProducts);
   if (isLoading) {
-    return <h3>.......isLoading</h3>
+    return <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_usmfx6bp.json" background="transparent" speed="1" style={{ width: "100px", height: "100px" }} loop autoplay></lottie-player>
   }
   return (
     <Wrapper className="section">
