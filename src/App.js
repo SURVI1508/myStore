@@ -19,9 +19,9 @@ const App = () => {
       white: "#fff",
       black: "#212529",
       helper: "#8490ff",
-      bg: "#F6F8FA",
-      footer_bg: "#0a1435",
-      btn: "rgb(98, 84, 243,0.5)",
+      bg: "#f3f7ff",
+      footer_bg: "#00252b",
+      btn: "#3b80ff",
       border: "rgba(98,84,243,0.5)",
       hr: "#ffffff",
       gradient: "rgba(0,0,0,0.02)0 1px 3px 0,rgba(27,31,35,0.15) 0 0 0 1px",
@@ -42,12 +42,12 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/singleProduct/:ID" element={<SingleProduct />} />
+          <Route path="/singleProduct/:id" element={<SingleProduct />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Contact />
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   </>
