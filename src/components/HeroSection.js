@@ -1,18 +1,14 @@
-import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import {  useProductContext } from '../context/productContext';
-// import { useProductContext } from '../productContext';
 import { Button } from '../styles/Button'
 const HeroSection = ({ myData }) => {
   const { name } = myData;
-  const {myName} = useProductContext()
   return (
     <Wrapper>
       <div className='container'>
         <div className='grid grid-two-column'>
           <div className='hero-setion-data'>
-            <p className='intro-data'>{myName}</p>
+            <p className='intro-data'>welcome to</p>
             <h1>{name}</h1>
             <p>Welcome, to React Ecommerce Website Tutorial in Hindi. In today's video, we will see how to create our header responsive using media queries and react Hooks.   </p>
             <NavLink>

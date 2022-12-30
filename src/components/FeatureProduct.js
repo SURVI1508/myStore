@@ -3,24 +3,26 @@ import { useProductContext } from "../context/productContext"
 import Product from "./Product";
 
 const FeatureProduct = () => {
-    const { isLoading, featureProducts } = useProductContext()
-    console.log(featureProducts);
-    if (isLoading) {
-        return <h3>.......isLoading</h3>
-    }
-    return (
-        <Wrapper className="section">
-            <div className="container">
-                <div className="intro-data">Check Now!</div>
-                <div className="common-heading">Our Feature Services</div>
-                <div className="grid grid-three-column">
-                    {featureProducts.map((curElem) => {
-                        return <Product key={curElem.id} {...curElem} />
-                    })}
-                </div>
-            </div>
-        </Wrapper>
-    )
+  const { isLoading, featureProducts } = useProductContext()
+  // console.log(featureProducts);
+  if (isLoading) {
+    return <h3>.......isLoading</h3>
+  }
+  return (
+    <Wrapper className="section">
+      <div className="container">
+        <div className="intro-data">Check Now!</div>
+        <div className="common-heading">Our Feature Services</div>
+        <div className="grid grid-three-column">
+          {
+            featureProducts.map((curElem) => {
+              return <Product key={curElem.id} {...curElem} />
+            })
+          }
+        </div>
+      </div>
+    </Wrapper>
+  )
 }
 const Wrapper = styled.section`
   padding: 9rem 0;

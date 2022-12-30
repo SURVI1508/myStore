@@ -4,6 +4,7 @@ import FormatPrice from '../helpers/FormatPrice'
 
 const Product = (curElem) => {
     const { id, name, image, price, category } = curElem;
+    // console.log(id)
     return (
         <NavLink to={`/singleProduct/${id}`}>
             <div className='card'>

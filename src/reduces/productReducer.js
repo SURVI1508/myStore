@@ -25,7 +25,7 @@ const ProductReducer = (state, action) => {
                 isError: true,
             };
 
-        ////////////////////////////////////////////////////////////////////////////////
+
 
         case "SET_SINGL_LOADING":
             return {
@@ -37,7 +37,7 @@ const ProductReducer = (state, action) => {
             return {
                 ...state,
                 isSinglLoading: false,
-                singlProduct: action.payload,
+                singleProduct: action.payload,
             };
 
         case "SINGL_ERROR":
