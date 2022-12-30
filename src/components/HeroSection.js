@@ -17,7 +17,8 @@ const HeroSection = ({ myData }) => {
           </div>
           <div className='hero-section-image'>
             <figure>
-              <img src='images/hero.jpg' alt='hero' className='img-style' />
+              {/* <img src='images/hero.jpg' alt='hero' className='img-style' /> */}
+              <lottie-player className='img-style' src="https://assets8.lottiefiles.com/private_files/lf30_ng6ygsm6.json" background="transparent" speed="1" loop autoplay></lottie-player>
             </figure>
           </div>
         </div>
@@ -57,7 +58,7 @@ const Wrapper = styled.section`
       content: "";
       width: 60%;
       height: 80%;
-      background-color: rgba(81, 56, 238, 0.4);
+      // background-color: rgba(81, 56, 238, 0.4);
       position: absolute;
       left: 50%;
       top: -5rem;
